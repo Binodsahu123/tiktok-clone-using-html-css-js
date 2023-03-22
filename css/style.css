@@ -10,6 +10,9 @@
     --whiteColor: #ffffff;
     --redColor: #fe2c55;
     --blackColor: #161823;
+    --grayColor: #cccccc;
+    --lightBlue: #36d1dc;
+    --limeGreen: limegreen;
 }
 
 html {
@@ -48,7 +51,7 @@ body {
     left: 0;
     width: 100%;
     padding: 1rem .5rem;
-    background-color: #000;
+    background-color: #000000;
     z-index: 1;
 }
 
@@ -106,7 +109,7 @@ body {
     border-top-color: transparent;
     border-bottom-color: transparent;
     border-left-color: var(--redColor);
-    border-right-color: #36d1dc;
+    border-right-color: var(--lightBlue);
 }
 
 .container .menu-bar ul li:nth-child(3) i {
@@ -182,7 +185,7 @@ body {
 }
 
 .content .home .top-bar .following {
-    color: #d6d1d1;
+    color: var(--grayColor);
 }
 
 .content .home .top-bar .following::before {
@@ -276,7 +279,6 @@ body {
 
 /*End Home Section*/
 /*Start Friends Section*/
-
 .content .friends .top-bar {
     position: absolute;
     top: 0;
@@ -330,7 +332,6 @@ body {
 
 /*End Friends Section*/
 /*Start Inbox Section*/
-
 .inbox .header-inbox {
     display: flex;
     align-items: center;
@@ -352,7 +353,7 @@ body {
     width: .8rem;
     height: .8rem;
     border-radius: 50%;
-    background-color: limegreen;
+    background-color: var(--limeGreen);
     right: -1.5rem;
     top: 50%;
     transform: translateY(-50%);
@@ -393,9 +394,8 @@ body {
     width: .8rem;
     height: .8rem;
     border-radius: 50%;
-    background-color: limegreen;
+    background-color: var(--limeGreen);
     border: .3rem solid var(--whiteColor);
-
 }
 
 .inbox .live .live-profile span {
@@ -439,7 +439,7 @@ body {
 }
 
 .inbox .main-inbox .msg-box:first-child .icon {
-    background-color: #36d1dc;
+    background-color: var(--lightBlue);
 }
 
 .inbox .main-inbox .msg-box:nth-child(2) .icon {
@@ -459,7 +459,7 @@ body {
 
 .inbox .main-inbox .msg-box .details p {
     font-size: 1.2rem;
-    color: #cccccc;
+    color: var(--grayColor);
 }
 
 /*End Inbox Section*/
@@ -530,7 +530,7 @@ body {
 .profile .profile-info ul li span {
     font-size: 1.1rem;
     text-transform: capitalize;
-    color: #cccccc;
+    color: var(--grayColor);
 }
 
 .profile .profile-info .buttons {
@@ -565,7 +565,7 @@ body {
 
 .profile .profile-videos ul li {
     font-size: 1.3rem;
-    color: #cccccc;
+    color: var(--grayColor);
     cursor: pointer;
     transition: all .3s ease;
 }
@@ -593,7 +593,6 @@ body {
 .profile .profile-videos .videos-container::-webkit-scrollbar {
     display: none;
 }
-
 
 .profile .profile-videos .videos-container .video video {
     width: 100%;
